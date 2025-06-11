@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movitec - Tu Transporte Inteligente</title>
+    <meta name="description" content="Movitec - La aplicación de transporte público que revoluciona tus viajes. Usa Movicoins para comprar paquetes y viaja de forma inteligente." />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>Movitec</h2>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#caracteristicas">Características</a></li>
+          <li><a href="#como-funciona">Cómo Funciona</a></li>
+          <li><a href="#movicoins">Movicoins</a></li>
+          <li><a href="#paquetes">Paquetes</a></li>
+          <li><a href="#comentarios">Comentarios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            El futuro del <span class="gradient-text">transporte público</span> está aquí
+          </h1>
+          <p class="hero-description">
+            Descubre Movitec, la aplicación que revoluciona tu forma de viajar. 
+            Busca rutas en tiempo real, escanea códigos QR para abordar, y usa Movicoins para una experiencia de pago sin efectivo.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn-primary">Descargar App</button>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="phone-mockup">
+            <img src="https://res.cloudinary.com/dqlpfaqwa/image/upload/v1749645710/Captura_de_pantalla_2025-06-11_073610_sjdtfg.png" alt="Historial viajes - Movitec" class="wireframe-image active" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- App Showcase Section -->
+    <section class="app-showcase">
+      <div class="container">
+        <div class="section-header">
+          <h2>Conoce la Aplicación <span class="gradient-text">Movitec</span></h2>
+          <p>Explora todas las funcionalidades que hacen de Movitec la mejor opción para tu transporte</p>
+        </div>
+        <div class="showcase-container">
+          <div class="showcase-navigation">
+            <button class="showcase-btn active" data-screen="search">
+              <span class="showcase-icon">🔍</span>
+              <span>Búsqueda</span>
+            </button>
+            <button class="showcase-btn" data-screen="map">
+              <span class="showcase-icon">🗺️</span>
+              <span>Mapa</span>
+            </button>
+            <button class="showcase-btn" data-screen="qr">
+              <span class="showcase-icon">📱</span>
+              <span>Scanner QR</span>
+            </button>
+            <button class="showcase-btn" data-screen="history">
+              <span class="showcase-icon">📋</span>
+              <span>Historial</span>
+            </button>
+            <button class="showcase-btn" data-screen="coins">
+              <span class="showcase-icon">🪙</span>
+              <span>Movicoins</span>
+            </button>
+            <button class="showcase-btn" data-screen="packages">
+              <span class="showcase-icon">📦</span>
+              <span>Paquetes</span>
+            </button>
+            <button class="showcase-btn" data-screen="payment">
+              <span class="showcase-icon">💳</span>
+              <span>Pago</span>
+            </button>
+            <button class="showcase-btn" data-screen="profile">
+              <span class="showcase-icon">👤</span>
+              <span>Perfil</span>
+            </button>
+          </div>
+          <div class="showcase-phone">
+            <div class="showcase-screens">
+              <img src="https://res.cloudinary.com/dqlpfaqwa/image/upload/v1749645230/Captura_de_pantalla_2025-06-11_073347_i9oeoy.png" alt="Barra de búsqueda" class="showcase-screen active" data-screen="search" />
+              <img src="https://res.cloudinary.com/dqlpfaqwa/image/upload/v1749645230/Captura_de_pantalla_2025-06-11_073334_sutswz.png" alt="Mapa de rutas" class="showcase-screen" data-screen="map" />
+              <img src="https://res.cloudinary.com/dqlpfaqwa/image/upload/v1749645710/Captura_de_pantalla_2025-06-11_073547_ptoyxx.png" alt="Scanner QR" class="showcase-screen" data-screen="qr" />
+              <img src="https://res.cloudinary.com/dqlpfaqwa/image/upload/v1749645710/Captura_de_pantalla_2025-06-11_073610_sjdtfg.png" alt="Historial de viajes" class="showcase-screen" data-screen="history" />
+              <img src="https://res.cloudinary.com/dqlpfaqwa/image/upload/v1749645711/Captura_de_pantalla_2025-06-11_073708_rdgk2m.png" alt="Compra de movicoins" class="showcase-screen" data-screen="coins" />
+              <img src="https://res.cloudinary.com/dqlpfaqwa/image/upload/v1749645711/Captura_de_pantalla_2025-06-11_073630_gujh62.png" alt="Paquetes de viajes" class="showcase-screen" data-screen="packages" />
+              <img src="https://res.cloudinary.com/dqlpfaqwa/image/upload/v1749645712/Captura_de_pantalla_2025-06-11_073836_r2n6fw.png" alt="Proceso de pago" class="showcase-screen" data-screen="payment" />
+              <img src="https://res.cloudinary.com/dqlpfaqwa/image/upload/v1749645829/Captura_de_pantalla_2025-06-11_073843_uxcf1j_e_improve_ppsgc1.png" alt="Perfil del usuario" class="showcase-screen" data-screen="profile" />
+            </div>
+          </div>
+          <div class="showcase-content">
+            <div class="showcase-description active" data-screen="search">
+              <h3>Búsqueda Inteligente</h3>
+              <p>Encuentra fácilmente tu destino con nuestra barra de búsqueda intuitiva. Obtén rutas optimizadas y tiempos estimados de llegada en tiempo real.</p>
+              <ul>
+                <li>✓ Búsqueda por dirección o punto de interés</li>
+                <li>✓ Sugerencias automáticas</li>
+                <li>✓ Rutas optimizadas</li>
+              </ul>
+            </div>
+            <div class="showcase-description" data-screen="map">
+              <h3>Mapa en Tiempo Real</h3>
+              <p>Visualiza todas las rutas disponibles y la ubicación exacta de los autobuses en tiempo real para planificar mejor tu viaje.</p>
+              <ul>
+                <li>✓ Ubicación de autobuses en tiempo real</li>
+                <li>✓ Múltiples rutas disponibles</li>
+                <li>✓ Información de paradas</li>
+              </ul>
+            </div>
+            <div class="showcase-description" data-screen="qr">
+              <h3>Scanner QR</h3>
+              <p>Escanea códigos QR para abordar el transporte de forma rápida y sin contacto físico. Una experiencia moderna y segura.</p>
+              <ul>
+                <li>✓ Abordaje sin contacto</li>
+                <li>✓ Proceso rápido y seguro</li>
+                <li>✓ Validación automática</li>
+              </ul>
+            </div>
+            <div class="showcase-description" data-screen="history">
+              <h3>Historial de Viajes</h3>
+              <p>Revisa todos tus viajes realizados, tanto con Movicoins como pagos tradicionales. Mantén un control completo de tu actividad.</p>
+              <ul>
+                <li>✓ Historial completo de viajes</li>
+                <li>✓ Detalles de cada trayecto</li>
+                <li>✓ Filtros por fecha y tipo</li>
+              </ul>
+            </div>
+            <div class="showcase-description" data-screen="coins">
+              <h3>Compra de Movicoins</h3>
+              <p>Adquiere Movicoins de manera fácil y segura para tus viajes. Múltiples opciones de recarga disponibles.</p>
+              <ul>
+                <li>✓ Recarga rápida y segura</li>
+                <li>✓ Múltiples métodos de pago</li>
+                <li>✓ Diferentes denominaciones</li>
+              </ul>
+            </div>
+            <div class="showcase-description" data-screen="packages">
+              <h3>Paquetes de Viaje</h3>
+              <p>Elige entre diferentes paquetes de viaje que se adapten a tus necesidades y ahorra en tus trayectos diarios.</p>
+              <ul>
+                <li>✓ Paquetes con descuentos</li>
+                <li>✓ Viajes adicionales gratis</li>
+                <li>✓ Diferentes duraciones</li>
+              </ul>
+            </div>
+            <div class="showcase-description" data-screen="payment">
+              <h3>Proceso de Pago</h3>
+              <p>Paga de forma segura con Yape, transferencia bancaria o tarjeta de crédito/débito. Tu dinero siempre protegido.</p>
+              <ul>
+                <li>✓ Pago con Yape</li>
+                <li>✓ Transferencia bancaria</li>
+                <li>✓ Tarjetas de crédito/débito</li>
+              </ul>
+            </div>
+            <div class="showcase-description" data-screen="profile">
+              <h3>Perfil del Usuario</h3>
+              <p>Gestiona tu cuenta, configuraciones y preferencias desde tu perfil personalizado. Control total de tu experiencia.</p>
+              <ul>
+                <li>✓ Información personal</li>
+                <li>✓ Configuraciones de la app</li>
+                <li>✓ Preferencias de viaje</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="caracteristicas" class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>¿Por qué elegir Movitec?</h2>
+          <p>Descubre las características que hacen de Movitec la mejor opción para tu transporte diario</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🚌</div>
+            <h3>Tiempo Real</h3>
+            <p>Conoce la ubicación exacta de tu autobús y los tiempos de espera precisos</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🗺️</div>
+            <h3>Rutas Optimizadas</h3>
+            <p>Encuentra las mejores rutas para llegar a tu destino de forma rápida y eficiente</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💳</div>
+            <h3>Pago Digital</h3>
+            <p>Olvídate del efectivo. Paga con Movicoins de forma segura y conveniente</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Planificación Inteligente</h3>
+            <p>Planifica tus viajes con anticipación y recibe notificaciones útiles</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🏆</div>
+            <h3>Sistema de Recompensas</h3>
+            <p>Gana Movicoins adicionales por usar frecuentemente la aplicación</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Seguro y Confiable</h3>
+            <p>Tu información y transacciones están protegidas con la mejor tecnología</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Movicoins Section -->
+    <section id="movicoins" class="movicoins-section">
+      <div class="container">
+        <div class="movicoins-header">
+          <div class="movicoins-icon-large">
+            <span class="mega-movicoin">🪙</span>
+          </div>
+          <h2>¿Qué son los <span class="gradient-text">Movicoins</span>?</h2>
+          <p class="movicoins-intro">Tu sistema de pago digital para el transporte público</p>
+        </div>
+
+        <div class="movicoins-content">
+          <p class="movicoins-description">
+            Las Movicoins son nuestra moneda digital que te permite pagar tus viajes de manera rápida, 
+            segura y conveniente. Compra paquetes, obtén descuentos y disfruta de beneficios exclusivos.
+          </p>
+          <ul class="movicoins-benefits">
+            <li class="benefit">
+              <div class="benefit-content">
+                <div class="benefit-icon">⚡</div>
+                <div class="benefit-text">
+                  <h4>Pagos Instantáneos</h4>
+                  <p>Paga tus viajes en segundos con una experiencia de usuario fluida y segura</p>
+                </div>
+              </div>
+            </li>
+            <li class="benefit">
+              <div class="benefit-content">
+                <div class="benefit-icon">💰</div>
+                <div class="benefit-text">
+                  <h4>Descuentos Exclusivos</h4>
+                  <p>Obtén mejores precios comprando paquetes de Movicoins</p>
+                </div>
+              </div>
+            </li>
+            <li class="benefit">
+              <div class="benefit-content">
+                <div class="benefit-icon">🎁</div>
+                <div class="benefit-text">
+                  <h4>Recompensas</h4>
+                  <p>Gana recompensas al usar Movicoins para tus viajes</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages Section - WITH STUDENT PACKAGES -->
+    <section id="paquetes" class="packages">
+      <div class="container">
+        <div class="section-header">
+          <h2>Paquetes de Viaje</h2>
+          <p>Elige el paquete que mejor se adapte a tus necesidades de transporte</p>
+        </div>
+        
+        <!-- Student Packages Section -->
+        <div class="student-packages-section">
+          <div class="student-header">
+            <h3><span class="student-icon">🎓</span> Paquetes Estudiantiles</h3>
+            <p class="student-disclaimer">*Requiere carnet de estudiante vigente o certificado de matrícula</p>
+          </div>
+          <div class="student-packages-grid">
+            <div class="package-card student-package">
+              <div class="student-badge">Estudiante</div>
+              <div class="package-header">
+                <h3>Básico Estudiante</h3>
+                <div class="package-price">
+                  <span class="original-price">🪙 10</span>
+                  <span class="coin-symbol">🪙</span>
+                  <span class="amount">8</span>
+                </div>
+                <div class="discount-badge">20% OFF</div>
+              </div>
+              <div class="package-trips">10 viajes + 1 gratis</div>
+              <ul class="package-features">
+                <li>✓ 8 Movicoins (valor de 10)</li>
+                <li>✓ 11 viajes totales</li>
+                <li>✓ Válido por 45 días</li>
+                <li>✓ Descuento estudiantil</li>
+                <li>✓ Verificación requerida</li>
+              </ul>
+              <button class="btn-package student-btn">Comprar con Descuento</button>
+            </div>
+
+            <div class="package-card student-package popular">
+              <div class="popular-badge">Más Popular</div>
+              <div class="student-badge">Estudiante</div>
+              <div class="package-header">
+                <h3>Estándar Estudiante</h3>
+                <div class="package-price">
+                  <span class="original-price">🪙 20</span>
+                  <span class="coin-symbol">🪙</span>
+                  <span class="amount">15</span>
+                </div>
+                <div class="discount-badge">25% OFF</div>
+              </div>
+              <div class="package-trips">20 viajes + 3 gratis</div>
+              <ul class="package-features">
+                <li>✓ 15 Movicoins (valor de 20)</li>
+                <li>✓ 23 viajes totales</li>
+                <li>✓ Válido por 75 días</li>
+                <li>✓ +3 viajes gratis</li>
+                <li>✓ Descuento estudiantil</li>
+                <li>✓ Soporte prioritario</li>
+              </ul>
+              <button class="btn-package student-btn">Comprar con Descuento</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Regular Packages -->
+        <div class="regular-packages-section">
+          <div class="packages-grid">
+            <div class="package-card">
+              <div class="package-header">
+                <h3>Básico</h3>
+                <div class="package-price">
+                  <span class="coin-symbol">🪙</span>
+                  <span class="amount">10</span>
+                </div>
+              </div>
+              <div class="package-trips">10 viajes</div>
+              <ul class="package-features">
+                <li>✓ 10 Movicoins</li>
+                <li>✓ 10 viajes incluidos</li>
+                <li>✓ Válido por 30 días</li>
+                <li>✓ Ideal para uso ocasional</li>
+              </ul>
+              <button class="btn-package">Comprar Paquete</button>
+            </div>
+
+            <div class="package-card popular">
+              <div class="popular-badge">Más Popular</div>
+              <div class="package-header">
+                <h3>Estándar</h3>
+                <div class="package-price">
+                  <span class="coin-symbol">🪙</span>
+                  <span class="amount">20</span>
+                </div>
+              </div>
+              <div class="package-trips">20 viajes + 1 gratis</div>
+              <ul class="package-features">
+                <li>✓ 20 Movicoins</li>
+                <li>✓ 21 viajes totales</li>
+                <li>✓ Válido por 60 días</li>
+                <li>✓ +1 viaje gratis incluido</li>
+                <li>✓ Ideal para uso regular</li>
+              </ul>
+              <button class="btn-package">Comprar Paquete</button>
+            </div>
+
+            <div class="package-card">
+              <div class="package-header">
+                <h3>Premium</h3>
+                <div class="package-price">
+                  <span class="coin-symbol">🪙</span>
+                  <span class="amount">50</span>
+                </div>
+              </div>
+              <div class="package-trips">50 viajes + 3 gratis</div>
+              <ul class="package-features">
+                <li>✓ 50 Movicoins</li>
+                <li>✓ 53 viajes totales</li>
+                <li>✓ Válido por 90 días</li>
+                <li>✓ +3 viajes gratis</li>
+                <li>✓ Rutas premium</li>
+              </ul>
+              <button class="btn-package">Comprar Paquete</button>
+            </div>
+            <p></p>
+            <div class="package-card deluxe centered">
+              <div class="deluxe-badge">Deluxe</div>
+              <div class="package-header">
+                <h3>Deluxe</h3>
+                <div class="package-price">
+                  <span class="coin-symbol">🪙</span>
+                  <span class="amount">80</span>
+                </div>
+              </div>
+              <div class="package-trips">80 viajes + 10 gratis</div>
+              <ul class="package-features">
+                <li>✓ 80 Movicoins</li>
+                <li>✓ 90 viajes totales</li>
+                <li>✓ Válido por 120 días</li>
+                <li>✓ +10 viajes gratis</li>
+                <li>✓ Beneficios exclusivos</li>
+                <li>✓ Soporte prioritario</li>
+              </ul>
+              <button class="btn-package">Comprar Paquete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment Methods Section -->
+    <section class="payment-methods">
+      <div class="container">
+        <div class="payment-content">
+          <div class="payment-info">
+            <h2>Múltiples Formas de <span class="gradient-text">Pago</span></h2>
+            <p>Compra tus Movicoins y paquetes de viaje con el método que prefieras</p>
+            <div class="payment-options">
+              <div class="payment-option">
+                <div class="payment-icon yape-icon">Y</div>
+                <div>
+                  <h4>Yape</h4>
+                  <p>Paga de forma instantánea con Yape</p>
+                </div>
+              </div>
+              <div class="payment-option">
+                <div class="payment-icon bank-icon">🏦</div>
+                <div>
+                  <h4>Transferencia Bancaria</h4>
+                  <p>Transfiere desde tu banco de confianza</p>
+                </div>
+              </div>
+              <div class="payment-option">
+                <div class="payment-icon card-icon">💳</div>
+                <div>
+                  <h4>Tarjeta de Débito/Crédito</h4>
+                  <p>Visa, Mastercard y más</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="payment-visual">
+            <div class="payment-mockup">
+              <div class="payment-header">
+                <h4>Proceso de Pago</h4>
+                <span class="secure-badge">🔒 Seguro</span>
+              </div>
+              <div class="payment-amount">
+                <span>Total: S/ 25.00</span>
+                <span class="coin-equivalent">20 Movicoins</span>
+              </div>
+              <div class="payment-methods-list">
+                <div class="method-option active">
+                  <span class="method-icon">Y</span>
+                  <span>Yape</span>
+                  <span class="check">✓</span>
+                </div>
+                <div class="method-option">
+                  <span class="method-icon">🏦</span>
+                  <span>Banco</span>
+                </div>
+                <div class="method-option">
+                  <span class="method-icon">💳</span>
+                  <span>Tarjeta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comments Section - IMPROVED -->
+    <section id="comentarios" class="comments-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Lo que dicen nuestros <span class="gradient-text">usuarios</span></h2>
+          <p>Experiencias reales de quienes ya disfrutan de Movitec</p>
+        </div>
+        
+        <div class="comments-showcase">
+          <div class="featured-comment">
+            <div class="comment-content">
+              <div class="quote-icon">"</div>
+              <p class="featured-text">Movitec ha revolucionado mi forma de viajar. Ya no necesito efectivo y siempre sé cuándo llega mi bus. Los Movicoins son super convenientes.</p>
+              <div class="featured-rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <span class="rating-text">5.0</span>
+              </div>
+              <div class="featured-author">
+                <div class="author-avatar">
+                  <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=40&h=40&auto=format" alt="Avatar" class="profile-image">
+                </div>
+                <div class="author-details">
+                  <h4>Marcos González</h4>
+                  <span>Estudiante universitario</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="comments-grid">
+            <div class="comment-card compact">
+              <div class="comment-rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+              </div>
+              <p class="comment-text">"Los paquetes de viaje me ahorran mucho dinero. Perfecto para mi trabajo diario."</p>
+              <div class="comment-author">
+                <div class="author-avatar">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&auto=format" alt="Avatar" class="profile-image">
+                </div>
+                <div class="author-info">
+                  <h4>Carlos M.</h4>
+                  <span>Ingeniero</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="comment-card compact">
+              <div class="comment-rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+              </div>
+              <p class="comment-text">"El mapa en tiempo real es increíble. Nunca más llego tarde al trabajo."</p>
+              <div class="comment-author">
+                <div class="author-avatar">
+                  <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=50&h=50&auto=format" alt="Avatar" class="profile-image">
+                </div>
+                <div class="author-info">
+                  <h4>Ana R.</h4>
+                  <span>Doctora</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="comment-card compact">
+              <div class="comment-rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+              </div>
+              <p class="comment-text">"Excelente app. Mis hijos también la usan sin problemas."</p>
+              <div class="comment-author">
+                <div class="author-avatar">
+                  <img src="https://images.unsplash.com/photo-1542156822-6924d1a71ace?w=40&h=40&auto=format" alt="Avatar" class="profile-image">
+                </div>
+                <div class="author-info">
+                  <h4>Luiz H.</h4>
+                  <span>Profesor</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>¿Listo para revolucionar tu forma de viajar?</h2>
+          <p>Únete a miles de usuarios que ya disfrutan de la experiencia Movitec</p>
+          <div class="cta-buttons">
+            <button class="btn-primary">Descargar para iOS</button>
+            <button class="btn-primary">Descargar para Android</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Movitec</h3>
+            <p>Revolucionando el transporte público con tecnología innovadora y experiencias excepcionales.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Enlaces</h4>
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#caracteristicas">Características</a></li>
+              <li><a href="#como-funciona">Cómo Funciona</a></li>
+              <li><a href="#movicoins">Movicoins</a></li>
+              <li><a href="#paquetes">Paquetes</a></li>
+              <li><a href="#comentarios">Comentarios</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Soporte</h4>
+            <ul>
+              <li><a href="#">Centro de Ayuda</a></li>
+              <li><a href="#">Términos de Uso</a></li>
+              <li><a href="#">Política de Privacidad</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Síguenos</h4>
+            <div class="social-links">
+              <a href="#">Facebook</a>
+              <a href="#">Twitter</a>
+              <a href="#">Instagram</a>
+              <a href="#">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Movitec. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
