@@ -15,6 +15,42 @@ if (navToggle && navMenu) {
   });
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  const steps = document.querySelectorAll('.step-card');
+  const screens = document.querySelectorAll('.showcase-screen');
+  const descriptions = document.querySelectorAll('.showcase-description');
+
+  steps.forEach(step => {
+    step.addEventListener('click', function () {
+      // Quitar 'active' de todos los pasos
+      steps.forEach(s => s.classList.remove('active'));
+      // Agregar 'active' al paso seleccionado
+      this.classList.add('active');
+
+      // Obtener el data-screen del paso seleccionado
+      const screen = this.getAttribute('data-screen');
+
+      // Mostrar solo la imagen correspondiente
+      screens.forEach(img => {
+        if (img.getAttribute('data-screen') === screen) {
+          img.classList.add('active');
+        } else {
+          img.classList.remove('active');
+        }
+      });
+
+      // Mostrar solo la descripción correspondiente
+      descriptions.forEach(desc => {
+        if (desc.getAttribute('data-screen') === screen) {
+          desc.classList.add('active');
+        } else {
+          desc.classList.remove('active');
+        }
+      });
+    });
+  });
+});
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -26,6 +62,43 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         block: 'start'
       });
     }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const steps = document.querySelectorAll('.timeline-step');
+  const circles = document.querySelectorAll('.timeline-circle');
+  const screens = document.querySelectorAll('.showcase-screen');
+  const descriptions = document.querySelectorAll('.showcase-description');
+
+  // Orden de data-screen según los pasos
+  const dataScreens = ['map', 'search', 'packages', 'qr', 'history', 'profile'];
+
+  steps.forEach((step, idx) => {
+    step.addEventListener('click', function () {
+      // Quitar 'active' de todos los pasos
+      steps.forEach(s => s.classList.remove('active'));
+      // Activar el paso seleccionado
+      step.classList.add('active');
+
+      // Mostrar solo la imagen correspondiente
+      screens.forEach(img => {
+        if (img.getAttribute('data-screen') === dataScreens[idx]) {
+          img.classList.add('active');
+        } else {
+          img.classList.remove('active');
+        }
+      });
+
+      // Mostrar solo la descripción correspondiente
+      descriptions.forEach(desc => {
+        if (desc.getAttribute('data-screen') === dataScreens[idx]) {
+          desc.classList.add('active');
+        } else {
+          desc.classList.remove('active');
+        }
+      });
+    });
   });
 });
 
